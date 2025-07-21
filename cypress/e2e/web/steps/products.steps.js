@@ -12,3 +12,11 @@ When('ele realiza a busca pelo produto {string}', (product) => {
 Then('a lista de produtos relacionados ao produto pesquisado deve ser exibida', () => {
     productsPage.assertListProduct();
 });
+
+When('ele adiciona o produto ao carrinho', () => {
+    productsPage.addProductToCart();
+});
+
+When('acessa o carrinho', () => {
+    productsPage.accessCartWithModal();
+});
