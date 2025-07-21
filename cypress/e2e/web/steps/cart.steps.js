@@ -12,6 +12,6 @@ When('ele vai para a tela de chekout', () => {
 });
 
 Then('o checkout deve conter o produto buscado', () => {
-    cartPage.verifyProductInCheckoutgit();
+    cartPage.verifyProductInCheckout();
 });
 

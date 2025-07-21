@@ -19,6 +19,6 @@ When('submete o login', () => {
     loginPage.submitLogin();
 });
 
-When('submete o cadastro', () => {
+When('submete o pré cadastro', () => {
     loginPage.submitSignup();
 });

@@ -25,6 +25,7 @@ git clone https://github.com/Hatgiargyrion/automationExercise.git
 cd automationExercise
 
 Após clonar o projeto e entrar na pasta, instale as dependências com:
+
 npm install
 
 Após instalar as dependências, abra o cypress:

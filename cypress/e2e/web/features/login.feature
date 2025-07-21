@@ -2,7 +2,7 @@ Feature: Login de usuário
 
     Background: Acessar tela de login
         Given o usuário acessa a página inicial do Automation Exercise
-        When o usuário navega para a página de Cadastro Login
+        And acesso o Submenu "Signup/Login"
 
     Scenario: Login com credenciais válidas
         And o usuário preenche o formulário de login com credenciais válidas do arquivo "commonData/userLogin.json"

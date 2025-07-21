@@ -29,7 +29,7 @@ class LoginPage {
 const elements = {
     loginTitle: () => cy.get('div h2').contains('Login to your account'),
     nameSignupInput: () => cy.get('[data-qa="signup-name"]'),
-    emailSignupInput: () => cy.get('[data-qa="signup-name"]'),
+    emailSignupInput: () => cy.get('[data-qa="signup-email"]'),
     emailLoginInput: () => cy.get('[data-qa="login-email"]'),
     passwordLoginInput: () => cy.get('[data-qa="login-password"]'),
     signupButton: () => cy.get('div.signup-form button'),
