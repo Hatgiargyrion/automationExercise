@@ -19,7 +19,8 @@ When("envio uma requisição POST para a API de criação de conta", () => {
 When("salvo os dados do usuário em {string} para uso futuro", (loginFixtureFile) => {
   const loginData = {
     email: userData.email,
-    password: userData.password
+    password: userData.password,
+    name: userData.name
   };
   cy.writeFile(`cypress/fixtures/${loginFixtureFile}`, loginData);
 });
