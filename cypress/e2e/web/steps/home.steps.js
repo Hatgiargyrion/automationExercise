@@ -10,3 +10,7 @@ Given('o usuário acessa a página inicial do Automation Exercise', () => {
 When('o usuário navega para a página de Cadastro Login', () => {
     homePage.clickSignupLoginButton();
 });
+
+Then('ele deve ser autenticado com sucesso', () => {
+    homePage.verifyUserLogged();
+});

@@ -22,7 +22,3 @@ When('submete o login', () => {
 When('submete o cadastro', () => {
     loginPage.submitSignup();
 });
-
-Then('ele deve ser autenticado com sucesso', () => {
-    loginPage.verifyUserLogged();
-});
