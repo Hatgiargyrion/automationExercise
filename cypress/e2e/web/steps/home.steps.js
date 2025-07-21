@@ -1,4 +1,4 @@
-import { When, Given } from '@badeball/cypress-cucumber-preprocessor';
+import { When, Given, Then } from '@badeball/cypress-cucumber-preprocessor';
 import HomePage from '../pages/HomePage';
 
 const homePage = new HomePage();
@@ -13,4 +13,8 @@ When('o usuário navega para a página de Cadastro Login', () => {
 
 Then('ele deve ser autenticado com sucesso', () => {
     homePage.verifyUserLogged();
+});
+
+When('ele realiza a busca pelo produto {string}', () => {
+    homePage.clickSignupLoginButton();
 });
