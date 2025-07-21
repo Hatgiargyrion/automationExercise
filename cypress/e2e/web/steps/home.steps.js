@@ -3,10 +3,10 @@ import HomePage from '../pages/HomePage';
 
 const homePage = new HomePage();
 
-Given('the user accesses the Automation Exercise home page', () => {
+Given('o usuário acessa a página inicial do Automation Exercise', () => {
     homePage.acessWebsite();
 });
 
-When('the user navigates to the Signup Login page', () => {
+When('o usuário navega para a página de Cadastro Login', () => {
     homePage.clickSignupLoginButton();
 });

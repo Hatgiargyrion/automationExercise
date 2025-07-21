@@ -3,10 +3,10 @@ import SignupPage from '../pages/SignupPage';
 
 const signupPage = new SignupPage();
 
-Given('fills in the registration form with valid personal and address details', () => {
+Given('preenche o formulário de registro com dados pessoais e endereço válidos', () => {
   signupPage.fillSignupForm();
 });
 
-Given('submits the registration', () => {
+Given('submete o cadastro', () => {
   signupPage.submitSignup();
 });

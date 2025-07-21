@@ -3,6 +3,6 @@ import AccountCreatedPage from '../pages/AccountCreatedPage';
 
 const accountCreatedPage = new AccountCreatedPage();
 
-Then('the account should be created successfully', () => {
+Then('a conta deve ser criada com sucesso', () => {
     accountCreatedPage.verifySignupHeader();
 });

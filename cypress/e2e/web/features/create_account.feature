@@ -1,10 +1,11 @@
-Feature: User
-  Background: Acess home
-    Given the user accesses the Automation Exercise home page
+Feature: Cadastro de usuário
 
-  Scenario: Successful account creation
-    When the user navigates to the Signup Login page
-    And fill out the pre-form with your name and email
-    And fills in the registration form with valid personal and address details
-    And submits the registration
-    Then the account should be created successfully
+  Background: Acessar página inicial
+    Given o usuário acessa a página inicial do Automation Exercise
+    When o usuário navega para a página de Cadastro Login
+
+  Scenario: Criação de conta com sucesso
+    And preenche o pré-formulário com nome e e-mail
+    And preenche o formulário de registro com dados pessoais e endereço válidos
+    And submete o cadastro
+    Then a conta deve ser criada com sucesso
