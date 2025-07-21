@@ -5,4 +5,4 @@ Feature: Gerenciamento de produtos
     Then o código de resposta deve ser 200
     And a resposta deve conter uma lista de produtos
     When extraio o nome e o preço de cada produto
-    Then salvo a lista simplificada de produtos no arquivo "commomData/productList.json"
+    Then salvo a lista simplificada de produtos no arquivo "commonData/productList.json"
