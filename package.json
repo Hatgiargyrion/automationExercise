@@ -1,19 +1,35 @@
 {
-  "name": "automationexercise",
+  "name": "automation-exercise",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Projeto de testes automatizados com Cypress e Cucumber",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:report": "cypress run --reporter mochawesome",
+    "generate-report": "node scripts/generate-report.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "cypress",
+    "testing",
+    "automation",
+    "e2e",
+    "cucumber"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^22.2.0",
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.3",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
-    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
-    "cypress": "^14.5.2",
-    "esbuild": "^0.25.8"
+    "cypress": "^12.10.0",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "prettier": "^3.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
