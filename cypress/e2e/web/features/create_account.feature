@@ -1,6 +1,6 @@
 Feature: Cadastro de usuário
 
-  Background: Acessar página inicial
+  Background: Acessar tela de login
     Given o usuário acessa a página inicial do Automation Exercise
     When o usuário navega para a página de Cadastro Login
 
