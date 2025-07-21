@@ -10,7 +10,7 @@ module.exports = defineConfig({
     setupNodeEvents: async (on, config) => {
 
       config.env = config.env || {};
-      config.env.stepDefinitions = "cypress/e2e/web/steps/**/*.{js,ts}";
+      config.env.stepDefinitions = "cypress/e2e/**/steps/**/*.{js,ts}";
 
       await addCucumberPreprocessorPlugin(on, config);
 
